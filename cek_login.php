@@ -18,30 +18,11 @@ $cek = mysqli_num_rows($login);
 // cek apakah username dan password di temukan pada database
 if($cek > 0){
  
-	$data = mysqli_fetch_assoc($login);
- 
-	// cek jika user login sebagai admin
-	if($data['level']=="admin"){
- 
-		// buat session login dan username
-		$_SESSION['username'] = $username;
-		$_SESSION['level'] = "admin";
-		// alihkan ke halaman dashboard admin
-		header("location:index.php");
- 
-	// cek jika user login sebagai pegawai
-	}else if($data['level']=="manajer"){
-		// buat session login dan username
-		$_SESSION['username'] = $username;
-		$_SESSION['level'] = "manajer";
-		// alihkan ke halaman dashboard pegawai
-		header("location:index_manajer.php");
- 
-	}else{
- 
-		// alihkan ke halaman login kembali
-		header("location:login.html?pesan=gagal");
-	}	
+	$_SESSION['username'] = $username;
+	$_SESSION['level'] = "admin";
+	// alihkan ke halaman dashboard admin
+	header("location:index.php");	
+	
 }else{
 	header("location:login.html?pesan=gagal");
 }
