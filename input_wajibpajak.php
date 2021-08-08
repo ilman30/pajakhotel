@@ -13,7 +13,7 @@ include "footer.php";
     <div class="container">
 
     <div class="card mt-3">
-        <div class="card-header bg-primary text-white">
+        <div class="card-header bg-danger text-white">
             Form Input Data Wajibpajak
         </div> 
         <div class="card-body">

@@ -33,7 +33,7 @@
     
     ?>
     <div class="card mt-3">
-        <div class="card-header bg-primary text-white text-center">
+        <div class="card-header bg-danger text-white text-center">
             Form Input Pajak
         </div>
         <div class="card-body">

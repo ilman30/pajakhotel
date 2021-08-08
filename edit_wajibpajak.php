@@ -53,7 +53,7 @@ if(isset($_GET['hal'])){
     <body>
     <div class="container">
     <div class="card mt-3">
-        <div class="card-header bg-primary text-white">
+        <div class="card-header bg-danger text-white">
             Form Edit Data Karyawan
         </div> 
         <div class="card-body">
